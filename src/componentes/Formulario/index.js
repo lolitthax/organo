@@ -7,13 +7,13 @@ import './Formulario.css'
 const Formulario = (props) => {
 
     const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
+        'Anemo',
+        'Cryo',
+        'Dendro',
+        'Electro',
+        'Geo',
+        'Hydro',
+        'Pyro'
     ]
 
     const [nome, setNome] = useState('')
@@ -34,7 +34,7 @@ const Formulario = (props) => {
     return (
         <section className="formulario">
             <form onSubmit={aoSalvar}>
-                <h2>Preencha os dados para criar o card do colaborador</h2>
+                <h2>Preencha os dados para criar o card do personagem!</h2>
                 <CampoTexto 
                     obrigatorio={true}
                     label="Nome"
@@ -44,8 +44,8 @@ const Formulario = (props) => {
                 />
                 <CampoTexto
                     obrigatorio={true}
-                    label="Cargo"
-                    placeholder="Digite seu cargo" 
+                    label="Função"
+                    placeholder="Digite a função" 
                     valor={cargo}
                     aoAlterado={valor => setCargo(valor)}
                 />
